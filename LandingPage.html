@@ -4,12 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LandingPage</title>
+    <script src="https://kit.fontawesome.com/262a3eb99a.js" crossorigin="anonymous"></script>
     <style>
+       *{
+    margin: 0px;
+}
+.offer{
+    height: 40px;
+    width: 100%;
+    /* border: 0px solid red; */
+    background-color:grey;
+    text-align: center;
+    color: aqua;
+    padding:5px;
+    font-size: 22px;
+}
+#lang{
+    display: flex;
+    justify-content: flex-end;
+    
+    padding-bottom:10px;
+}  
+#lang > button{
+  border: none;
+}
+#navbar{
+    display: flex;
+    width:100%;
+    height:40px;
+
+}
+#nav{
+    height: 100px;
+    display: flex;
+    justify-content:space-around;
+    width:50%;
+
+}
+#logo_right{
+    height: 100px;
+    width: 50%;
+   display: flex;
+   justify-content:space-evenly;
+
+
+}
+#menu_area{
+    width:90%;
+    display: flex;
+    justify-content: space-around;
+    height:50px ;
+    font-size: 20px;
+    text-align: center;
+    background-color:whitesmoke;
+}
       *{
         margin: 0%;
       }
-    
   #sevenset {
    display:grid;
    grid-template-columns: repeat(3,1fr);
@@ -50,11 +102,47 @@ width:100%;
     </style>
 </head>
 <body>
-  <iframe
+  <div class="offer">New Users get 25% Off dinnerware,candles,glassware & more!</div>
+  <div id="lang">
+      <select>
+        <option>English</option>
+        <option>Spanish</option>
+        <option>French</option>
+        <option >Hindi</option>
+      </select>  
+    <a href="/sign%20in/signup.html"> <button id="in" >SignIn/SignUp</button></a>
+    </div>
+<div id="navbar">
+    <div id="nav">
+        <a href="/LandingPage.html"><p id="ant"><a href="">ANTHROPOLOGIE</a></p></a>
+        <p id="antro"><a href="">anthro livinghome</a></p>
+    </div>
+
+    <div id="logo_right">
+       <div><input type="text" name=""placeholder="Search Anthropologie"></div>
+      <a href="/sign%20in/login.html"> <div id="ini"><i class="fa-regular fa-user"></i></div></a>
+       <a href="/cart.html"><div id="cart"><i class="fa-solid fa-cart-shopping"></i></div></a>
+    </div>
+</div>
+<hr style="padding-top: 10px;">
+  <div id="menu_area">
+       <div><a href="">New!</a></div> 
+       <div><a href="https://www.anthropologie.com/dresses">Dresses</a></div>
+       <div><a href="/cloths.html">Clothing</a></div>
+       <div><a href="/shoes.html">Shoes</a></div>
+       <div><a href="https://www.anthropologie.com/shoes-accessories">Accessories</a></div>
+       <div><a href="https://www.anthropologie.com/house-home">Home & Furniture</a></div>
+       <div><a href="https://www.anthropologie.com/beauty-wellness">Beauty & Wellness</a></div>
+       <div><a href="https://www.anthropologie.com/garden-outdoor-living">Garden & Outdoor</a></div>
+       <div><a href="https://www.anthropologie.com/all-gifts">Gifts & Candles</a></div>
+       <div><a href="https://www.anthropologie.com/sale-all">Sale</a></div>
+    </div>
+<hr> 
+  <!-- <iframe
   style="height: 100%; width: 100%; overflow: hidden"
   src="footer_header\header.html"
   frameborder="0"
-></iframe>
+></iframe> -->
         
 <div id="sevenset">
   <div>
