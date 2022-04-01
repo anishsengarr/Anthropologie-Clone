@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strappy Sandals</title>
+    <style>
+       
+.offer{
+    height: 40px;
+    width: 100%;
+   
+    background-color:grey;
+    text-align: center;
+    color: aqua;
+    padding:5px;
+    font-size: 22px;
+}
+#lang{
+    display: flex;
+    justify-content: flex-end;
+    
+    padding-bottom:10px;
+}  
+#lang > button{
+  border: none;
+}
+#navbar{
+    display: flex;
+    width:100%;
+    height:40px;
+
+}
+#nav{
+    height: 100px;
+    display: flex;
+    justify-content:space-around;
+    width:50%;
+
+}
+#logo_right{
+    height: 100px;
+    width: 50%;
+   display: flex;
+   justify-content:space-evenly;
+
+
+}
+#menu_area{
+    width:90%;
+    display: flex;
+    justify-content: space-around;
+    height:50px ;
+    font-size: 20px;
+    text-align: center;
+    background-color:whitesmoke;
+}
+#prodcontainer {
+  width: 100%;
+  display: flex;
+  height: auto;
+  column-gap: 10px;
+  margin: auto;
+}
+#verticalimg {
+  display: inline-block;
+  width: 22%;
+  text-align: center;
+}
+#verticalimg > div {
+  width: auto;
+}
+#verticalimg > div > img {
+  width: 130px;
+  height: 130px;
+}
+#mainimg {
+  width: 42%;
+}
+#productdetails {
+  width: 55%;
+}
+
+#mainimg > img {
+  width: auto;
+  height: 550px;
+}
+#productdetails {
+  line-height: 10px;
+  text-align: left;
+}
+#pdiv {
+  margin-top: 10px;
+}
+#belowprice > div {
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 1px;
+}
+#sizeip {
+  text-align: left;
+  line-height: 1px;
+}
+select {
+  width: 350px;
+  height: 40px;
+}
+#addtokart {
+  display: flex;
+  column-gap: 30px;
+  margin: auto;
+}
+#addtokart > :nth-child(1) {
+  padding-top: 10px;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+#qty {
+  width: 100px;
+  height: 35px;
+  font-weight: bolder;
+}
+#addtokartbtn {
+  width: 275px;
+  height: 40px;
+  background-color: blue;
+  color: white;
+  font-size: larger;
+  font-weight: bolder;
+}
+#pincontainer {
+  display: flex;
+  column-gap: 50px;
+  margin-top: 20px;
+}
+#pincontainer > div > input {
+  height: 35px;
+  width: 250px;
+}
+#btncalcship {
+  height:35px;
+  width: 250px;
+  background-color: blue;
+  color: white;
+  font-weight: bolder;
+}
+
+#similarprodcontainer {
+  display: flex;
+  width: 100%;
+  
+
+}
+#similarprodcontainer > div {
+  width:19%;
+  height:50%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+    </style>
+  </head>
+  <body>
+   
+    <div id="prodcontainer">
+      <div id="verticalimg">
+        <div onclick="showing1()">
+          <img
+            src="https://images.urbndata.com/is/image/Anthropologie/63185169_053_b4?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"
+            alt="logo"
+          />
+        </div>
+        <div onclick="showing2()">
+          <img
+            src="https://images.urbndata.com/is/image/Anthropologie/63185169_053_b3?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"
+            alt="logo"
+          />
+        </div>
+        <div onclick="showing3()">
+          <img
+            src="https://images.urbndata.com/is/image/Anthropologie/63185169_053_b2?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"
+            alt="logo"
+          />
+        </div>
+        <div onclick="showing4()">
+          <img
+            src="https://images.urbndata.com/is/image/Anthropologie/63185169_053_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100"
+            alt="logo"
+          />
+        </div>
+      </div>
+      <div id="mainimg">
+        <img
+          id="mainimgimg"
+          src="https://images.urbndata.com/is/image/Anthropologie/63185169_053_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640"
+          alt=""
+        />
+      </div>
+      <div id="productdetails">
+        <h1>Strappy Heeled Clog Sandals</h1>
+        <a href="PROJECT/sign in/signup.html"> write review </a>
+        <div id="pdiv">
+          <p>
+            <b style="font-size:large">$ 99.00</b>
+          </p>
+        </div>
+        <div id="belowprice">
+          <div
+            style="
+              border: 0.5px solid;
+              height: 0.5px grey;
+              width: 100%;
+              background-color: grey;
+            "
+          ></div>
+          <div>
+            <p style="font-size: small">
+              <b>Free Standard Shipping on orders from Antropologie.</b>
+            </p>
+          </div>
+          <div
+            style="
+              border: 0.1px solid;
+              height: 0.1px grey;
+              width: 100%;
+              background-color: grey;
+            "
+          ></div>
+        </div>
+        <!-- size select start -->
+        <div id="sizeip">
+          <p>Size:</p>
+          <div>
+            <select name="please select1" id="sizeselect">
+              <option value="10">10</option>
+              <option value="9">9</option>
+              <option value="8">8</option>
+              <option value="7">7</option>
+              <option value="6">6</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <p>Width:</p>
+          <div>
+            <select name="please select2" id="widthselect">
+              <option value="medium">M</option>
+              <option value="wide">W</option>
+            </select>
+          </div>
+          <p><b>Color: BROWN</b></p>
+        </div>
+        <div id="addtokart">
+          <div>QTY :</div>
+          <div>
+            <select name="qty" id="qty">
+              <option value="0">Quantity</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div>
+            <button onclick="addtokart()" id="addtokartbtn">ADD TO CART</button>
+          </div>
+        </div>
+        <div id="pincontainer">
+          <div>
+            <input type="number" placeholder="enter pincode" id="pincode" />
+          </div>
+          <div>
+            <button onclick="delposs()" id="btncalcship">
+              CALCULATE SHIPPING
+            </button>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+
+    <div style="text-align: center">
+      <h1>We thought you may also like</h1>
+    </div>
+    <div id="similarprodcontainer">
+      <div>
+        <img
+          src="https://images.urbndata.com/is/image/Anthropologie/63649594_001_b2?$an-category$&qlt=50&fit=constrain"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.urbndata.com/is/image/Anthropologie/63648877_023_b2?$an-category$&qlt=50&fit=constrain"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.urbndata.com/is/image/Anthropologie/67078113_221_b2?$an-category$&qlt=50&fit=constrain"
+          alt=""/>
+      </div>
+      <div>
+        <img
+          src="https://images.urbndata.com/is/image/Anthropologie/67620013_001_b2?$an-category$&qlt=50&fit=constrain"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.urbndata.com/is/image/Anthropologie/63731400_025_b2?$an-category$&qlt=80&fit=constrain"
+          alt=""/>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+
+function showing1() {
+    let pic1 = document.createElement("img");
+    pic1.src =
+      "https://img.shop.com/Image/270000/279100/279185/products/1890336639__800x800__.jpg";
+    // document.getElementById("mainimg").append(pic);
+    pic1.style.width = "500px";
+    pic1.style.height = "500px";
+    pic1.style.padding = "10px";
+    document.getElementById("mainimgimg").replaceWith(pic1);
+  }
+  function showing2() {
+    let pic2 = document.createElement("img");
+    pic2.src =
+      "https://img.shop.com/Image/270000/279100/279185/products/alt_793710094__800x800__.jpg";
+    // document.getElementById("mainimg").append(pic);
+    pic2.style.width = "500px";
+    pic2.style.height = "500px";
+    document.getElementById("mainimgimg").replaceWith(pic2);
+  }
+  function showing3() {
+    let pic3 = document.createElement("img");
+    pic3.src =
+      "https://img.shop.com/Image/270000/279100/279185/products/alt_793710095__800x800__.jpg";
+    // document.getElementById("mainimg").append(pic);
+    pic3.style.width = "500px";
+    pic3.style.height = "500px";
+    document.getElementById("mainimgimg").replaceWith(pic3);
+  }
+  function showing4() {
+    let pic4 = document.createElement("img");
+    pic4.src =
+      "https://img.shop.com/Image/270000/279100/279185/products/alt_793710096__800x800__.jpg";
+    // document.getElementById("mainimg").append(pic);
+    pic4.style.width = "500px";
+    pic4.style.height = "500px";
+    document.getElementById("mainimgimg").replaceWith(pic4);
+  }
+  let arrforkart = JSON.parse(localStorage.getItem("kartDataBase")) || [];
+  function addtokart() {
+    event.preventDefault();
+    let size = document.getElementById("sizeselect").value;
+    let width = document.getElementById("widthselect").value;
+    let qty = document.getElementById("qty").value;
+    let price = 1699;
+    let kartobj = {
+      qty: qty,
+      price: price,
+      prodname: "Georgia Boot Small Batch Casual Boot",
+    };
+    arrforkart.push(kartobj);
+    localStorage.setItem("kartDataBase", JSON.stringify(arrforkart));
+  
+    window.location.href = "../cart.html";
+  }
+  function delposs() {
+    event.preventDefault();
+    let pin = document.getElementById("pincode").value;
+    if (pin.length == 6) {
+      alert("Wow! This product can ship to the location you've requested.");
+    } else {
+      alert("This product cannot be shipped to the location you've requested.");
+    }
+  }
+</script>

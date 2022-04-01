@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign Up</title>
+    <style>
+      #fun{
+height: 800px;
+width: 40%;
+
+margin: auto;
+background-color: hsl(0, 0%, 90%);
+}
+       #email {
+            border: 2px solid #154c79;
+            height: 38px;
+            width: 92%;
+            border-radius: 5px;
+
+        }
+        #pass {
+            border: 2px solid #154c79;
+            height: 38px;
+            width: 92%;
+            border-radius: 5px;
+
+        }
+  
+  #container {
+        text-align: center;
+        margin: auto;
+        line-height: 15px;
+        }
+  #btn {
+    width: 400px;
+    color: white;
+    background-color: #463768;
+    height: 40px;
+    border-radius: 2px;
+  }
+  #btn {
+           border: none;
+            height: 46px;
+            width: 95%;
+            background-color:#154c79;
+            color: white;
+
+        }
+        #btn:hover{
+            background-color: white;
+            color: #154c79;
+        }
+        #container {
+        text-align: center;
+        margin: auto;
+        line-height: 15px;
+        text-justify:inter-word;
+        }
+        *{
+        padding:3px; 
+        } 
+    </style>
+  </head>
+  <body>
+    <div id="fun">
+    <div id="unique">
+
+      <div id="container">
+        <h2>Create An Account</h2>
+        <p>Welcome to Anthropologie! It's quick and easy to set up an account.</p>
+      </div>
+  <form>
+    <label for="fname">Email*</label><br />
+    <input type="email" id="email" placeholder="yourname@example.com" />
+    <label for="fname">Mobile Number*</label><br />
+    <input type="password" id="pass" placeholder="Mobile Number" />
+   <p>Enter your mobile number to receive a verification code. Note: This action does not enroll you in SMS marketing messages. </p> 
+   <input type="submit" id="btn" value="NEXT">
+  </form>    
+ 
+      
+         
+          <p><input type="checkbox" />
+           Sign me up to receive Anthropologie offers, promotions and other commercial messages. By creating an account, I agree to Anthropologie's Terms of Service and Privacy Policy. I may unsubscribe at any time. Creating an account will not enroll you in SMS marketing.
+          </p>
+      
+  
+          <p>By creating an account, you agree to Anthropologie's terms of use and privacy policy. Landlines, VoIP, and prepaid phones are not supported. Standard message & data rates may apply. Message frequency may vary. Reply HELP for help, and STOP to cancel. Contact us for more information.</p>
+      
+          <div id="container"><h2>Already Have an Account?</h2></div>
+
+      <div>
+         <button id="btn">SIGN IN</button>
+        </div>
+
+    </div>
+  </div>
+  </body>
+</html>
+<script>{
+  document.querySelector("form").addEventListener("submit", signUpFun);
+  
+  var userData = JSON.parse(localStorage.getItem("userdetails"))||[]
+
+
+  function signUpFun() {
+    event.preventDefault();
+
+    var userObj = {
+      email: document.querySelector("#email").value,
+      password: document.querySelector("#pass").value,
+      
+    };
+    userData.push(userObj);
+    localStorage.setItem("userdetails",JSON.stringify(userData))
+
+  }
+}
+document.getElementById("btn").addEventListener("click",link);
+function link() {
+  event.preventDefault();
+//   console.log("true")
+window.location.href = "LandingPage.html";
+}
+</script>
+
+
+
+
+
