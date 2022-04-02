@@ -1,5 +1,5 @@
 medium id -: https://medium.com/@anishsengarr123/project-anthropologie-clone-340630e5e869
-Netlify link-
+video link-: https://drive.google.com/drive/folders/1ajFLhUyeFQHFnYSkcs2ttqaemcOM7blr?usp=sharing
 
                                       Project Anthropologie Clone
 
