@@ -1,4 +1,5 @@
 medium id -: https://medium.com/@anishsengarr123/project-anthropologie-clone-340630e5e869
+Netlify link-
 
                                       Project Anthropologie Clone
 
